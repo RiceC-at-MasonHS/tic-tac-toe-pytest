@@ -11,6 +11,8 @@ A simple, modular terminal-based Tic-Tac-Toe game written in Python. This projec
 - Designed to illustrate best practices in modular programming and testing.
 
 ## Folder Structure
+
+```
 tic-tac-toe/
 ├── src/
 │   ├── logic.py
@@ -24,6 +26,7 @@ tic-tac-toe/
 ├── requirements.txt
 ├── .gitignore
 ├── README.md
+```
 
 ---
 
