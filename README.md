@@ -175,3 +175,20 @@ Enjoy playing and learning!
 
 > **Note for beginners:**  
 > You’ll see a few lines at the top of each test file that add the `src` folder to Python’s path. This makes sure your tests can always find your code, no matter what computer or operating system you’re using, or where you run `pytest` from. It’s the easiest and most reliable way for new programmers!
+
+---
+
+## Contributing
+
+We welcome contributions from students!  
+**Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to propose changes, open pull requests, and understand our code review process.**
+
+---
+
+**Summary for beginners:**  
+- Always make changes on a branch, not directly on `main`.
+- Open a pull request for your changes.
+- Wait for your teacher or a code owner to review and merge your code.
+- Ask questions and learn from the feedback!
+
+---
