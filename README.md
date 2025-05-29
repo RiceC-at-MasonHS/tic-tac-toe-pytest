@@ -43,6 +43,13 @@ But there are still more possible ways to test your programs, manually or automa
 
 - Run the game with `python src/main.py`.
 - Play the game as a user, trying different moves and edge cases (like invalid input or quitting with `CTRL+C`).
+    Here are some edge cases to try:
+    - **Entering a move outside the board:** Try typing a number that's not 1-9 (like `0`, `10`, or `-1`) and see how the game responds.
+    - **Choosing a spot that's already taken:** Try to place your mark on a square that's already filled.
+    - **Entering something that's not a number:** Type a letter or symbol (like `a` or `!`) instead of a number.
+    - **Quitting the game:** Press `CTRL+C` during your turn to see how the program handles an unexpected exit.
+    - **Filling the board without a winner:** Play until all spaces are filled and check if the game correctly declares a draw.
+
 - This is the most basic form of testing: using the program as intended and observing its behavior.
 
 ### 2. In-Module `if __name__ == "__main__":` Tests
