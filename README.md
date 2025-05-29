@@ -2,6 +2,8 @@
 
 A simple, modular terminal-based Tic-Tac-Toe game written in Python. This project is designed for teaching and demonstration purposes, with a focus on code organization and multiple layers of testing.
 
+![Screenshot of Tic-Tac-Toe Game](screenshot.png)
+
 ---
 
 ## Overview
@@ -32,7 +34,10 @@ tic-tac-toe/
 
 ## Testing Layers
 
-This project demonstrates five main types of testing:
+This project demonstrates five main types of testing.
+First are two layers of informal testing, then three categories of automated testing (as shown below).
+![Screenshot showing `pytest` output](pytest-screenshot.png)
+But there are still more possible ways to test your programs, manually or automatically. 
 
 ### 1. User/Playtesting
 
