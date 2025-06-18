@@ -93,6 +93,31 @@ To run **all tests at once**, simply use:
 pytest
 ```
 
+### 6. Continuous Integration (CI) with GitHub Actions
+
+Every time you push code or open a pull request, **GitHub Actions** will automatically run all the tests for you.  
+This is called **Continuous Integration (CI)** and helps make sure that all code changes are tested and nothing is accidentally broken.
+
+- You can see the results of these automated tests in the **Actions** tab of your repository.
+- If any test fails, you’ll see a red ❌ and can click to see what went wrong.
+- If all tests pass, you’ll see a green ✔️ and know your code is working!
+
+**How it works:**  
+- The workflow is defined in [`.github/workflows/python-tests.yml`](.github/workflows/python-tests.yml).
+- This file tells GitHub to set up Python, install dependencies, and run `pytest` every time you push or open a pull request.
+
+**Why is this important?**
+- It helps catch bugs early, before code is merged.
+- It teaches you how professional teams keep their code reliable.
+- You don’t have to remember to run tests yourself—GitHub does it for you!
+
+![Screenshot showing GitHub Actions CI results](github-actions-screenshot.png)
+
+> **Learn more:**  
+> - [GitHub Actions documentation](https://docs.github.com/en/actions)
+> - [What is Continuous Integration? (GitHub Docs)](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration)
+> - Long-running test [can incur costs on GitHub](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions), but there is a generous free tier
+
 ---
 
 ## Other Testing Layers
@@ -101,9 +126,6 @@ Beyond the main types of testing shown above, there are additional ways to test 
 
 - **Mocking/Monkeypatching:**  
   Sometimes, you want to test a function that depends on user input or output, but you don't want to actually type at the keyboard or print to the screen during your test. Mocking (or "monkeypatching") lets you temporarily replace parts of your code (like `input()` or `print()`) with something else, so you can simulate different scenarios and check how your code responds.
-
-- **Continuous Integration (CI):**  
-  In professional software development, it's common to use tools that automatically run all your tests every time you make a change to your code (for example, when you push to GitHub). This is called Continuous Integration. It helps catch bugs early and ensures your code always works as expected.
 
 - **Property-Based Testing:**  
   Instead of writing specific test cases, property-based testing tools (like [`hypothesis`](https://hypothesis.readthedocs.io/en/latest/) in Python) generate lots of random inputs for your functions and check that certain properties always hold true. This can help you find edge cases you might not have thought of.
